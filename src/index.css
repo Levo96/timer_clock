@@ -1,0 +1,263 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff") format("woff"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7") format("svg");
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  background-color: lightgrey;
+}
+
+#content_box {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1F2025, orange);
+}
+
+.app_container {
+  
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1F2025;
+  box-shadow: 0 16px 28px 0 rgba(0,0,0,.8),0 25px 55px 0 rgba(0,0,0,0.21);
+}
+
+/* -- TITLE CONTAINER -- */
+
+.title_container {
+  height: 10%;
+  width: 100%;
+  border-bottom: 1px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_container h2 {
+  font-size: 2em;
+  color: orange;
+  letter-spacing: 2px;
+  font-family: Digital;
+  text-shadow: 3px 3px black;
+}
+
+/* -- DISPLAY CONTAINER -- */
+
+.display_clock_container 
+{
+  height: 50%;
+  width: 100%;
+  border-bottom: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display_clock_container h2 {
+  font-size: 4em;
+  letter-spacing: 2px;
+  font-family: Digital;
+  text-shadow: 3px 3px black;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.display_clock_container h3{
+  letter-spacing: 2px;
+  font-family: Digital;
+  text-shadow: 3px 3px black;
+  color: white;
+}
+
+/* -- SETTINGS CONTAINER -- */
+
+/*-- setting container parent -- */
+.sessions_settingsC_container
+{
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+
+/* -- left right boxes inside settin container -- */
+
+.left_sessions_settings_container {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid orange;
+}
+
+/* inside the leftbox */
+.lssc_display_container
+{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lssc_display_container h4 
+{
+  color: limegreen;
+  text-transform: uppercase;
+  font-family: Digital;
+  text-shadow: 2px 2px black;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+.lssc_display_container h3
+{
+  color: limegreen;
+  text-transform: uppercase;
+  font-family: Digital;
+  text-shadow: 2px 2px black;
+  font-size: 2.4em;
+}
+
+.lssc_buttons_container
+{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* session settings buttons */
+.increase_session_button {
+  height: 70%;
+  width: 40%;
+  border: 1px solid limegreen;
+  background-color: #1F2025;
+  color: limegreen;
+  font-weight: bold;
+  text-align:center;
+}
+
+.decrease_session_button {
+  height: 70%;
+  width: 40%;
+  border: 1px solid limegreen;
+  background-color: #1F2025;
+  color: limegreen;
+  font-weight: bold;
+  text-align:center;
+}
+
+/* inside the rightbox */
+.right_sessions_settings_container
+{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* inside the leftbox */
+.rssc_display_container
+{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rssc_display_container h4 
+{
+  color: red;
+  text-transform: uppercase;
+  font-family: Digital;
+  text-shadow: 2px 2px black;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+.rssc_display_container h3
+{
+  color: red;
+  text-transform: uppercase;
+  font-family: Digital;
+  text-shadow: 2px 2px black;
+  font-size: 2.4em;
+}
+
+.rssc_buttons_container
+{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* session settings buttons */
+.increase_break_button {
+  height: 70%;
+  width: 40%;
+  border: 1px solid red;
+  background-color: #1F2025;
+  color: red;
+  font-weight: bold;
+  text-align:center;
+}
+
+.decrease_break_button {
+  height: 70%;
+  width: 40%;
+  border: 1px solid red;
+  background-color: #1F2025;
+  color: red;
+  font-weight: bold;
+  text-align:center;
+}
+
+
+
+
+
+/* --------------------------------- */
+
+
+/* -- START BUTTON CONTAINER --  */
+.start_button_container
+{
+  height: 10%;
+  width: 100%;
+}
+
+.start_button_container button {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid orange;
+  color: black;
+  background-color: orange;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* ----------------- */
